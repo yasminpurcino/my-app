@@ -1,7 +1,7 @@
 import React from 'react';
 //import './Emoji';
 import './App.css';
-//import Emoji from './Emoji';
+import Emoji from './Emoji';
 //import './PortalDemo';
 //import PortalDemo from './PortalDemo';
 //import ComponentC from './ComponentC';
@@ -47,8 +47,12 @@ class App extends React.Component {
   // render gera o html display na tela 
   render() {
     // eu quero a funcao render q pertence ao objeto emoji (q foi definida na classe Emoji) que pertence a OBJETO App
-    return <Calculator2 />
-
+    //render both components here
+    return (
+      <>
+        <Emoji /><Calculator2 /> 
+      </>
+    )
   }
 
 }

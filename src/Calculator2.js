@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Emoji from './Emoji';
+//import Emoji from './Emoji';
 
 class Calculator2 extends Component {
     constructor(props) {
@@ -69,7 +69,6 @@ class Calculator2 extends Component {
         return (
 
             <div>
-                <Emoji />
                 <br></br>
                 <form onSubmit={this.submitHandler}>
                     <div>

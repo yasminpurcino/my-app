@@ -21,7 +21,6 @@ class Emoji extends React.Component { // classe react  = react.component
         this.state = {
             mood: "😃"
 
-
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -30,7 +29,7 @@ class Emoji extends React.Component { // classe react  = react.component
     handleClick() {
         console.log(this.state)
 
-        this.setState({ mood: '🥰' });
+        this.setState(this.state.mood == "😃"? { mood: '🥰' } : { mood: '😃' }); //this lets the button switch between two states every click
     }
 
 
@@ -39,7 +38,7 @@ class Emoji extends React.Component { // classe react  = react.component
         return (
             <div><p>Mood: {this.state.mood}!</p>
                 <button onClick={this.handleClick}>
-                    Click me
+                    Change me
                 </button></div>
         );
     }
